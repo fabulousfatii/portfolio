@@ -53,7 +53,7 @@ function About() {
     <h1 className='p-6 pt-8 text-6xl font-bold text-center '> About me</h1>
     <p className='p-8 px-16 text-lg font-["Mulish"] max-sm:text-sm max-md:text-wrap'>Hi my name is Fatima Saleem. Curently a university student doing BSCS. Taking advantage of being an online student. I started to learn coding
       from very first day of my university. With time coding sarted to become more interesting to me. I have build my good skills in "Frontend Developmet". It took 1 years to understand and learn about it.
-      I am willing to learn more about web development and undertand how the things happens and to make more big projects in future. Thank you!    </p>
+      I am willing to learn more about web development and to make more big projects soon. Thank you!    </p>
     </div>
     <div className='w-full h-[55%] grid grid-cols-2 max-sm:grid-cols-1'>
        <div className=' relative pngPics'>

@@ -5,18 +5,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 function Contact() {
     gsap.registerPlugin( ScrollTrigger,);
-    useGSAP(()=>{
-      gsap.from(".contact",{
-        opacity:0,
-        duration: 1.3,
-        scrollTrigger:{
-          trigger:"#contact",
-          scroll:"body",
-          start: "top 0%",
-           end:"top 70%",
-      }
-      })
-    })
+   
     return (
         <section  id='contact' className=' w-full h-screen   p-11 pb-20   flex flex-col items-center  '>
         <h1 className='p-6 py-8  text-6xl font-bold text-center contact '> Contact</h1>
