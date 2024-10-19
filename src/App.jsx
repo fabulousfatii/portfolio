@@ -19,12 +19,12 @@ function App() {
   gsap.from(h1Ref.current,{
     y:50,
     opacity:0,
-    duration:1,
+    duration:2,
   })
 
   gsap.from("nav",{
     y:400,
-    duration:1.2,
+    duration:1.5,
   })
   gsap.from(".bg",{
     x:-100,
