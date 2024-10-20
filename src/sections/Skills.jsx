@@ -4,22 +4,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 function Skills() {
-  gsap.registerPlugin( ScrollTrigger,);
-useGSAP(()=>{
-  gsap.from(".skills",{
-    x:-800,
-    duration: 1.3,
-    scrollTrigger:{
-      trigger:"#skills",
-      scroll:"body",
-      start: "top 0%",
-      end:"top 20%"
-       
-      
-      
-  }
-  })
-})
+  
     return (
        
             <section id='skills' className='lg:w-[98.5vw] md:w-full lg:h-full md:h-[100vh] flex flex-col justify-center bgskill p-7  '>
