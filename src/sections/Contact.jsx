@@ -2,13 +2,15 @@ import React from 'react'
 import { useGSAP } from '@gsap/react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { motion } from 'framer-motion';
 
 function Contact() {
     gsap.registerPlugin( ScrollTrigger,);
    
     return (
         <section  id='contact' className=' w-full h-screen   p-11 pb-20   flex flex-col items-center  '>
-        <h1 className='p-6 py-8  text-6xl font-bold text-center contact '> Contact</h1>
+        <motion.h1 initial={{y:100,opacity:0}}
+                     whileInView={{y:0,opacity:100, transition:{duration:1} }}  className='p-6 py-8  text-6xl font-bold text-center contact '> Contact</motion.h1>
         <div className=' grid lg:grid-cols-3 justify-center items-center w-[70%] pt-20 max-sm:grid-cols-1 md:grid-cols-1'>
         <div>
         <svg height={100} width={100} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6.014 8.00613C6.12827 7.1024 7.30277 5.87414 8.23488 6.01043L8.23339 6.00894C9.14051 6.18132 9.85859 7.74261 10.2635 8.44465C10.5504 8.95402 10.3641 9.4701 10.0965 9.68787C9.7355 9.97883 9.17099 10.3803 9.28943 10.7834C9.5 11.5 12 14 13.2296 14.7107C13.695 14.9797 14.0325 14.2702 14.3207 13.9067C14.5301 13.6271 15.0466 13.46 15.5548 13.736C16.3138 14.178 17.0288 14.6917 17.69 15.27C18.0202 15.546 18.0977 15.9539 17.8689 16.385C17.4659 17.1443 16.3003 18.1456 15.4542 17.9421C13.9764 17.5868 8 15.27 6.08033 8.55801C5.97237 8.24048 5.99955 8.12044 6.014 8.00613Z" fill="#4dcc33"></path>

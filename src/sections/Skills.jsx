@@ -1,14 +1,15 @@
 import React from 'react'
-import { useGSAP } from '@gsap/react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { motion } from "framer-motion"
+
 
 function Skills() {
   
     return (
        
-            <section id='skills' className='lg:w-[98.5vw] md:w-full lg:h-full md:h-[100vh] flex flex-col justify-center bgskill p-7  '>
-                    <h1 className='skills p-6 mt-4 text-6xl font-bold text-center mr-7 '> Skills</h1>
+            <section id='skills' className='lg:w-[98.5vw] md:w-full lg:h-full md:h-[100vh] flex flex-col justify-center  p-7  '>
+                    <motion.h1 initial={{x:-700}}
+                     whileInView={{x:0, transition:{duration:1.5} }} 
+                      className=' p-6 mt-4 text-6xl font-bold text-center mr-7 '> Skills</motion.h1>
   <div className=' max-md:hidden max-sm:hidden flex gap-5 p-20 justify-center '  >
     <div className='item1    w-[150px]  max-sm:w-[70px]   '>
       <img  width={150} height={200} className=''  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSoW3g9hjXIasgon-kpzz-lD9z4SsalyPbZA&s" alt="" />
