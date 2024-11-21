@@ -7,8 +7,8 @@ function Skills() {
     return (
        
             <section id='skills' className='lg:w-[98.5vw] md:w-full lg:h-full md:h-[100vh] flex flex-col justify-center  p-7  '>
-                    <motion.h1 initial={{x:-700}}
-                     whileInView={{x:0, transition:{duration:1.5} }} 
+                    <motion.h1 initial={{opacity:0}}
+                     whileInView={{opacity:100, transition:{duration:1} }} 
                       className=' p-6 mt-4 text-6xl font-bold text-center mr-7 '> Skills</motion.h1>
   <div className=' max-md:hidden max-sm:hidden flex gap-5 p-20 justify-center '  >
     <div className='item1    w-[150px]  max-sm:w-[70px]   '>

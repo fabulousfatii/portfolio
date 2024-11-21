@@ -7,7 +7,7 @@ function Projects() {
         <section id='projects' className='w-full h-full py-11 bgProject  '>
         <div className='w-[80%] h-[80%] bg-transparent m-auto rounded-3xl border-2 bgProjectArea p-10 my-20'>
         <motion.h1 initial={{opacity:0}}
-                     whileInView={{opacity:100, transition:{duration:1.5} }}  className=' m-4 text-6xl font-bold text-center mb-10 '> Projects</motion.h1>
+                     whileInView={{opacity:100, transition:{duration:1.5} }}  className=' m-4 max-sm:m-2 max-sm:mb-6 text-6xl font-bold text-center mb-10 '> Projects</motion.h1>
         <div className='w-full flex gap-7 justify-center items-center flex-wrap '>
 
                <Link to={"/blogwebsite"}>
